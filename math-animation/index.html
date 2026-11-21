@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rotating Windmill Blades | Math Animation</title>
+
+    <!-- p5.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+    <!-- Animation JavaScript -->
+    <script src="sketch.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        main {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin: 15px 0 8px;
+        }
+
+        #canvas-container {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        canvas {
+            max-width: 100%;
+            height: auto !important;
+            border-radius: 8px;
+        }
+
+        ul {
+            margin-left: 25px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .video-link {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .video-link:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Rotating Windmill Blades</h1>
+        <p>Math-Based Animation Using p5.js</p>
+    </header>
+
+    <main>
+
+        <!-- Animation Section -->
+        <section>
+            <h2>Windmill Animation</h2>
+
+            <p>
+                This animation demonstrates the rotation of a windmill
+                using mathematical concepts such as angles, radians,
+                and trigonometry.
+            </p>
+
+            <div id="canvas-container"></div>
+        </section>
+
+        <!-- Controls Section -->
+        <section>
+            <h2>Animation Controls</h2>
+
+            <ul>
+                <li><strong>SPACEBAR:</strong> Pause or resume the animation.</li>
+                <li><strong>UP ARROW:</strong> Increase the rotation speed.</li>
+                <li><strong>DOWN ARROW:</strong> Decrease the rotation speed.</li>
+                <li><strong>R:</strong> Reset the animation.</li>
+            </ul>
+        </section>
+
+        <!-- Mathematics Section -->
+        <section>
+            <h2>Mathematical Explanation</h2>
+
+            <h3>1. Angular Rotation</h3>
+
+            <p>
+                The windmill rotates by continuously increasing its
+                rotation angle. The angle is updated every frame
+                using the formula:
+            </p>
+
+            <p><strong>New Angle = Previous Angle + Rotation Speed</strong></p>
+
+            <h3>2. Radians and Angles</h3>
+
+            <p>
+                The animation uses radians to calculate the position
+                of each blade. One complete rotation is equal to
+                2π radians or 360 degrees.
+            </p>
+
+            <h3>3. Four-Blade Arrangement</h3>
+
+            <p>
+                The windmill has four blades positioned equally
+                around the center. Each blade is separated by
+                90 degrees, which is represented by HALF_PI in p5.js.
+            </p>
+
+            <h3>4. Rotation Speed</h3>
+
+            <p>
+                Changing the rotation speed changes how quickly
+                the blades rotate. A higher value makes the
+                windmill spin faster, while a lower value makes
+                it spin slower.
+            </p>
+        </section>
+
+        <!-- Video Section -->
+        <section>
+            <h2>Explanation Video</h2>
+
+            <p>
+                Watch my video presentation explaining the animation,
+                mathematical concepts, and how the code works.
+            </p>
+
+            <!-- Replace this with your actual video URL -->
+            <a class="video-link" href="YOUR-VIDEO-LINK" target="_blank" rel="noopener noreferrer">
+                VIDEO EXPLANATION
+            </a>
+        </section>
+
+        <!-- Acknowledgment Section -->
+        <section>
+            <h2>Code and Tools Acknowledgment</h2>
+
+            <ul>
+                <li>
+                    <strong>p5.js:</strong>
+                    JavaScript library used to create the animation.
+                </li>
+
+                <li>
+                    <strong>ChatGPT:</strong>
+                    used for the the idea and guide in using the formulas to create the animation.
+                </li>
+
+                <li>
+                    <strong>CODEX:</strong>
+                    used for the code and guide to create the animation.<br>
+                    - Website page design outline and structure was created using CODEX.
+                </li>
+            </ul>
+            
+        </section>
+
+        <a class="back-link" href="../index.html">
+            ← Back to Main Page
+        </a>
+
+    </main>
+
+    <footer>
+        <p>Math-Based Animation | p5.js Project</p>
+    </footer>
+
+</body>
+
+</html>
