@@ -232,7 +232,7 @@ function keyPressed() {
     }
 
     // Increase rotation speed
-    if (key === 'i' || key === 'I   ') {
+    if (key === 'i' || key === 'I   ') {    
         rotationSpeed += 0.005;
     }
 
